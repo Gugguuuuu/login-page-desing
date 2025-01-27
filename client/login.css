@@ -1,0 +1,87 @@
+:root{
+    --amarelao:#FAEE1C;
+    --contraAmarelao:#F2F1E1;
+    --mareloMarrom:#85824D;
+    --contraMareloMarrom:#FFFA94;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, var(--amarelao), var(--contraAmarelao), var(--contraMareloMarrom)), var(--mareloMarrom);
+}
+.login_box{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    border:3px solid black;
+    border-top-left-radius:25px; 
+    border-top-right-radius:0px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:0px;
+}
+.singUp{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--contraMareloMarrom);
+    border-top-left-radius:25px; 
+    border-top-right-radius:0px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:0px;
+}
+.login{
+    width: 50%;
+    height: 100%;
+    background-color: var(--mareloMarrom);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    border-top-left-radius:25px; 
+    border-top-right-radius:0px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:0px;
+}
+.titulo_singAndLogin{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.caixasDeTextos_sing{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--mareloMarrom);
+    box-shadow: 2px 2px 2px var(--mareloMarrom);
+}
+.caixasDeTextos_login{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--mareloMarrom);
+}
+.botao-enviar_login{
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    border: 0;
+    background-color: var(--contraAmarelao);
+}
+.botao-enviar_sing{
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    border: 0;
+    background-color: var(--mareloMarrom);
+}
