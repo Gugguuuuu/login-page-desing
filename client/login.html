@@ -10,22 +10,34 @@
 <body>
     <section class="login_box">
 
-            <form action="submit" class="singUp">
-                <h1 class="titulo_singAndLogin">Cadastra-se</h1>
-                <input type="text" class="caixasDeTextos_sing" placeholder="Digite seu Nome De usuario">
-                <input type="text" class="caixasDeTextos_sing" placeholder="Digite seu E-mail">
-                <input type="text" class="caixasDeTextos_sing" placeholder="Digite sua senha">
-                <button class="botao-enviar_sing">Cadastra-se</button>
+            <form action="submit" class="signUp">
+                <h1 class="titulo_sign">Cadastra-se</h1>
+                <input type="text" class="caixasDeTextos_sign" placeholder="Digite seu Nome De usuario">
+                <input type="text" class="caixasDeTextos_sign" placeholder="Digite seu E-mail">
+                <input type="text" class="caixasDeTextos_sign" placeholder="Digite sua senha">
+                <button class="botao-enviar_sign">Cadastra-se</button>
             </form>      
 
-            <form action="submit" method="post" class="login">
-                <h1 class="titulo_singAndLogin">Entrar na sua conta</h1>
-                <input type="text" class="caixasDeTextos_login" placeholder="Digite seu Nome De usuario">
-                <input type="text" class="caixasDeTextos_login" placeholder="Digite seu E-mail">
-                <input type="text" class="caixasDeTextos_login" placeholder="Digite sua senha">
-                <button class="botao-enviar_login">Entrar</button>
-            </form>
+            <section class="change_login">
+                <h3 class="change-tiltle">Login</h3>
+                    <p class="change-text">Bem-vindo de volta! Faça login para acessar sua conta e aproveitar todos os nossos recursos exclusivos.</p>
+                <button class="change-button" id="change-button_login">Login</button>
+            </section>
 
+    </section>
+
+    <form action="submit" method="post" class="login">
+        <h1 class="titulo_login">Entrar na sua conta</h1>
+        <input type="text" class="caixasDeTextos_login" placeholder="Digite seu Nome De usuario">
+        <input type="text" class="caixasDeTextos_login" placeholder="Digite seu E-mail">
+        <input type="text" class="caixasDeTextos_login" placeholder="Digite sua senha">
+        <button class="botao-enviar_login">Entrar</button>
+    </form>
+    
+    <section class="change_singUp">
+        <h3 class="change-tiltle">Cadastra-se</h3>
+            <p class="change-text">Novo por aqui? Crie uma conta em segundos e descubra tudo o que temos a oferecer!</p>
+        <button class="change-button" id="change-button_signUp">Cadastra-se</button>
     </section>
 </body>
 </html>
