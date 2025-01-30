@@ -1,197 +1,134 @@
-:root {
-    --amarelao: #FAEE1C;
-    --contraAmarelao: #F2F1E1;
-    --mareloMarrom: #85824D;
-    --contraMareloMarrom: #FFFA94;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+:root{
+    --azul_roxo:#040471;
+    --branquitude_azulada:#E1E1FA;
+    --azul_branco:#066899;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    height: 100vh;
+body{
     width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--azul_roxo), var(--branquitude_azulada), var(--azul_branco));
+    color: var(--branquitude_azulada);
+    font-family: "Lato", serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, var(--mareloMarrom), var(--contraAmarelao), var(--contraMareloMarrom)), var(--amarelao);
 }
-
-.login_box {
-    /*caixa toda */
-    width: 1000px;
-    height: 350px;
-    display: flex;
-    border: 1px solid black;
-    border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* PARTE DO SIGN UP */
-
-.signUp {
+.container{
     width: 50%;
-    height: 100%;
+    height: auto;
+    display: flex;
+    background-color:var(--azul_branco);
+    border-radius: 1rem;
+}
+.container__signup{
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--contraAmarelao);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 0px;
+    flex-direction: column;
+    align-items:center;
+    gap: 2rem;
+    padding: 16px ;
 }
-
-.titulo_sign {
+.signup-tittle{
     font-size: 30px;
-    color: black;
-    text-shadow: 1px 1px 3px var(--mareloMarrom);
-
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px var(--azul_branco);
 }
-
-.caixasDeTextos_sign {
-    width: 70%;
-    height: 30px;
-    padding: 5px;
+.div_para_as_inputs{
+    display: flex;
+    width: 80%;
+    gap: 2px;
+    align-items: center;
+}
+.signup-input{
+    width: 90%;
     background-color: transparent;
+    color: var(--branquitude_azulada);
+    outline: none;
+    padding:12px 20px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-}
-
-.caixasDeTextos_sign:focus {
-    width: 75%;
-    height: 35px;
-    outline: none;
-    border-bottom: 2px solid var(--amarelao);
+    border-bottom: 2px solid var(--branquitude_azulada);
     transition: 500ms linear;
 }
-
-.botao-enviar_sign {
-    width: 60%;
-    height: 30px;
-    border-radius: 15px;
-    border: 0;
-    background-color: var(--amarelao);
-    font-size: 15px;
-    box-shadow: 2px 2px 2px 2px var(--mareloMarrom);
+.signup-input:focus{
+    border-bottom: 3px solid var(--azul_roxo);
+    width: 95%;
+    margin-bottom: 10px;
 }
-
-/* PARTE DO LOGIN */
-
-.login {
+.signup-input::placeholder{
+    color: var(--branquitude_azulada);
+}
+.signup-button{
+    width: 60%;
+    padding: 12px 20px;
+    color: var(--azul_roxo);
+    border-radius: 1rem;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px var(--azul_roxo);
+}
+.signup-button:hover{
+    border: 2px solid var(--branquitude_azulada);
+    color: var(--branquitude_azulada);
+    background-color: transparent;
+}
+.signup-button:active{
+    transform: translate(5px, 5px);
+    box-shadow: none;
+}
+.container__change_login{
     width: 50%;
-    height: 100%;
-    background-color: var(--mareloMarrom);
-    color: var(--contraAmarelao);
+    height: auto;
+    background-color: var(--branquitude_azulada);
+    color: var(--azul_roxo);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
     justify-content: space-around;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 25px;
-
+    gap: 2rem;
+    padding: 16px ;
 }
-
-.titulo_login {
+.login-tittle{
     font-size: 30px;
-    color: var(--contraAmarelao);
+    letter-spacing: 2px;
+}
+.login-text{
+    font-size: 18px;
+}
+.login-button {
+    background: linear-gradient(to right, var(--azul_roxo), #066899, #0a82be, #069ae4);
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.login-button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #066899,#0a82be, #069ae4, var(--azul_roxo));
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    width: 210px;
+    height: 60px;
 }
 
-.caixasDeTextos_login {
-    width: 70%;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 0;
-    background-color: var(--contraAmarelao);
-    transition: 500ms linear;
-}
-
-.caixasDeTextos_login:focus {
-    width: 75%;
-    height: 35px;
-    border-radius: 25px;
-    outline: none;
-    border: 2px solid var(--contraMareloMarrom);
-}
-
-.botao-enviar_login {
-    width: 60%;
-    height: 30px;
-    border-radius: 15px;
-    border: 0;
-    background-color: var(--contraAmarelao);
-}
-
-/* PARTE DOS CHANGES */
-
-.change_login {
-    width: 50%;
-    height: 100%;
-    background-color: var(--contraMareloMarrom);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 25px;
-}
-
-.change_singUp {
-    width: 50%;
-    height: 100%;
-    background-color: var(--contraMareloMarrom);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 0px;
-}
-
-.change-tiltle {
-    font-size: 35px;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 2px var(--mareloMarrom);
-}
-
-.change-text {
-    font-size: 20px;
-    color: var(--mareloMarromo);
-    width: 80%;
-}
-
-.change-button {
-    width: 50%;
-    height: 40px;
-    border-radius: 15px;
-    border: 0;
-    background-color: var(--mareloMarrom);
-    font-size: 20px;
-    animation: change-background 6s linear infinite;
-}
-
-
-@keyframes change-background {
-    0% {
-        background: var(--mareloMarrom);
-    }
-
-    50% {
-        background-color: var(--contraAmarelao);
-    }
-
-    100% {
-        background: var(--mareloMarrom)
-    }
-}

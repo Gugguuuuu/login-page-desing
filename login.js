@@ -1,15 +1,15 @@
-let container = document.querySelector('.login_box');// caixa toda
+let container = document.querySelector('container');// caixa toda
 
 let login = document.querySelector('.login');// parte do login
 document.body.removeChild(login)
 
-let singUp = document.querySelector('.signUp');// parte do sing up
+let singUp = document.querySelector('.container__signup');// parte do sing up
 
 let change_signUp = document.querySelector('.change_singUp');// parte para trocar para signUp
 
-let change_login = document.querySelector('.change_login');// parte para trocar para login
+let change_login = document.querySelector('.container__change_login');// parte para trocar para login
 
-let button_signUp = document.getElementById('change-button_signUp')// parte para trocar para sign up
+let button_signUp = document.querySelector('.signup-button')// parte para trocar para sign up
 
 let button_login = document.getElementById('change-button_login')// parte para trocar para login
 
